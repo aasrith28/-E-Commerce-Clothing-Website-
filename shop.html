@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Balaji Clothing</title>
+    <link rel="stylesheet" href="shop.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand-name">Balaji Clothing</div>
+            <div class="header-buttons">
+                <button class="cart-button" onclick="window.location.href='cart.html'">🛒 <span class="item-count">0</span></button>
+                <button class="login-button" onclick="window.location.href='loginandregister.html'">Login/Register</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="men.html"><button>men</button></a></li>
+            <li><a href="women.html"><button>Women</button></a></li>
+            <li><a href="cart.html"><button>Cart </button></a></li>
+            <li><a href="index.html"><button>Home</button></a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Shop</h1>
+        <section class="product-listing">
+            <div class="product-grid">
+                <div class="product">
+                    <img src="assets/men/formal shirt/Formal Shirt black.jpg" alt="Black Formal Shirt">
+                    <h3>Black Formal Shirt</h3>
+                    <p>Price: 850 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Black Formal Shirt', price: 850})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/men/kurta/Kurta  white.jpg" alt="Off White Kurta">
+                    <h3>Off White Kurta</h3>
+                    <p>Price: 950 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Off White Kurta', price: 950})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/women/Lehenga/Lehenga blue.jpg" alt="Blue Lehenga">
+                    <h3>Blue Lehenga</h3>
+                    <p>Price: 750 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Blue Lehenga', price: 750})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/women/saree/Saree red.jpg" alt="Red Saree">
+                    <h3>Red Saree</h3>
+                    <p>Price: 1200 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Red Saree', price: 1200})">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">🌐</a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">📷</a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+        <p>&copy; 2024 K.AASRITHA VARDHAN. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Clothing E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand-name">Balaji Clothing</div>
+            <div class="header-buttons">
+                <button class="cart-button" onclick="window.location.href='cart.html'">🛒 <span class="item-count">0</span></button>
+
+                <button class="login-button" onclick="window.location.href='loginandregister.html'">Login/Register</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html"><button>Home</button></a></li>
+            <li><a href="men.html"><button>Men</button></a></li>
+            <li><a href="women.html"><button>Women </button></a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-banner">
+            <h1>Discover Your Style</h1>
+            <p>Shop the latest trends at Balaji Clothing</p>
+            <button onclick="window.location.href='shop.html'">Shop Now</button>
+        </section>
+
+       
+
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="assets/women/Lehenga/Lehenga blue.jpg" alt="Example Product">
+                    <h3>Blue Lehenga</h3>
+                    <p>850 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Example Product', price: 850})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/men/formal shirt/Formal Shirt black.jpg" alt="Example Product">
+                    <h3>Black Formal Shirt</h3>
+                    <p>850 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Example Product', price: 850})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/women/Lehenga/Lehenga white.jpg" alt="Example Product">
+                    <h3>White Lehenga</h3>
+                    <p>850 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Example Product', price: 850})">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="assets/men/blazer/Blazer white.jpg" alt="Example Product">
+                    <h3>White Blazer</h3>
+                    <p>850 Rs</p>
+                    <button class="add-to-cart" onclick="addToCart({name: 'Example Product', price: 850})">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="features">
+            <div class="feature">
+                <img src="assets/shipping.png" alt="" class="featureIcon medium">
+                <div class="featureDetails">
+                    <span class="featureTitle">FREE SHIPPING</span>
+                    <span class="featureDesc">Free worldwide shipping on all orders.</span>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="assets/return.png" alt="" class="featureIcon medium">
+                <div class="featureDetails">
+                    <span class="featureTitle">15 DAYS RETURN</span>
+                    <span class="featureDesc">No questions asked easy return and refund.</span>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="assets/contact.png" alt="" class="featureIcon medium">
+                <div class="featureDetails">
+                    <span class="featureTitle">Contact Us</span>
+                    <span class="featureDesc">Keep in touch via email and support system.</span>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <img src="assets/Social media Icons/facebook.png" height="50" width="50" class="fIcon" alt="Facebook">
+                <img src="assets/Social media Icons/twitter.png" height="50" width="50" alt="Twitter" class="fIcon">
+                <img src="assets/Social media Icons/instagram.png" height="50" width="50" alt="Instagram" class="fIcon">
+                <img src="assets/Social media Icons/whatsapp.png" height="50" width="50" alt="WhatsApp" class="fIcon">
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <span class="copyright">@ K.Aasritha Vardhan All rights reserved. 2024.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
